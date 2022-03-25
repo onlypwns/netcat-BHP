@@ -40,7 +40,7 @@ else:
 nc = NetCat(args, buffer.encode())
 nc.run()
 
-class NetCat():
+class NetCat:
     def __init__(self, args,buffer=None):
         self.args = args
         self.buffer = buffer
