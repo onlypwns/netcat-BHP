@@ -37,10 +37,10 @@ if args.listen:
 else:
     buffer = sys.stdin.read()
 
-nc = NetCat(args, buffer.encode())
+nc = Netcat(args, buffer.encode())
 nc.run()
 
-class NetCat:
+class Netcat:
     def __init__(self, args,buffer=None):
         self.args = args
         self.buffer = buffer
